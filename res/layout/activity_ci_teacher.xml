@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+	tools:context=".ACourseInfoTeacher" >
+     
+	<TextView
+		android:id="@+id/tvCourseName"
+		android:layout_width="75dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="5dp"
+		android:ems="10"
+		android:text="Name" />
+
+    <EditText
+        android:id="@+id/etCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvCourseName"
+        android:layout_alignTop="@+id/tvCourseName"
+        android:layout_toRightOf="@+id/tvCourseName"
+        android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:ems="10"
+		android:hint="Course name"
+		android:editable="true"
+		android:singleLine="true" />
+    
+	<TextView
+		android:id="@+id/tvCourseCode"
+		android:layout_width="75dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="40dp"
+		android:ems="10"
+		android:text="Code" />
+    
+	<EditText
+		android:id="@+id/etCourseCode"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvCourseCode"
+        android:layout_alignTop="@+id/tvCourseCode"
+        android:layout_toRightOf="@+id/tvCourseCode"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:ems="10"
+		android:hint="Code course"
+		android:singleLine="true" />
+    
+	<TextView
+		android:id="@+id/tvECTS"
+		android:layout_width="75dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="75dp"
+		android:ems="10"
+		android:text="ECTS" />
+    
+    <EditText
+		android:id="@+id/etECTS"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvECTS"
+        android:layout_alignTop="@+id/tvECTS"
+        android:layout_toRightOf="@+id/tvECTS"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:ems="10"
+		android:hint="ECTS"
+		android:inputType="number"
+		android:singleLine="true" />
+    
+    <TextView
+        android:id="@+id/tvTeacher"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:text="Teacher" />
+            
+    <TextView
+        android:id="@+id/tvTeacherFill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTeacher"
+        android:layout_alignTop="@+id/tvTeacher"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/tvTeacher"
+        android:ems="10"
+        android:hint="Teacher"
+        android:singleLine="true" />
+    
+    <Button
+        android:id="@+id/btnUpdateCourse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="165dp"
+        android:text="Update course" />
+    
+    <Button
+        android:id="@+id/btnCourseForum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="210dp"
+        android:text="Course forum" />
+    
+    <Button
+        android:id="@+id/btnCourseDelete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="255dp"
+        android:text="Delete course" />
+    
+</RelativeLayout>

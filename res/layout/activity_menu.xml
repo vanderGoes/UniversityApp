@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/back"
+    tools:context=".MenuActivity" >
+
+     <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:padding="10dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="20dp">
+
+          <Button
+              android:id="@+id/btnJumpToF1"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_weight="1"
+              android:background="@null"
+              android:drawableTop="@drawable/maps"
+              android:gravity="center_horizontal"
+              android:onClick="onClickFeature"
+              android:text="@string/Map"
+              android:textStyle="normal" />
+          
+          
+        <Button
+            android:id="@+id/btnJumpToF2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/course"
+            android:gravity="center_horizontal"
+            android:onClick="onClickFeature"
+            android:text="Courses information"
+            android:textStyle="normal" />
+
+         </LinearLayout>
+       
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="20dp">
+        
+        <Button
+            android:id="@+id/btnJumpToF3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/calendar"
+            android:gravity="center_horizontal"
+            android:onClick="onClickFeature"
+            android:text="Calendar"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btnJumpToF4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/app"
+            android:gravity="center_horizontal"
+            android:onClick="onClickFeature"
+            android:text="My profile"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="20dp">
+        
+        <Button
+            android:id="@+id/btnJumpToF5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/contacts"
+            android:gravity="center_horizontal"
+            android:onClick="onClickFeature"
+            android:text="Search Profile"
+            android:textStyle="normal" />
+
+        <!-- <Button
+            android:id="@+id/btnJumpToF6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_launcher"
+            android:gravity="center_horizontal"
+            android:onClick="onClickFeature"
+            android:text="Log Out"
+            android:textStyle="normal" />
+ -->
+    </LinearLayout>
+
+ </LinearLayout>
+ </ScrollView>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backmain"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".CourseActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="exemple" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:text="exemple" />
+
+            <Button
+                android:id="@+id/btnJumptoMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="Sign in"
+                android:textColor="@color/com_facebook_loginview_text_color" />
+
+            <Button
+                android:id="@+id/btnJumptoSignUp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="Sign Up"
+                android:textColor="@color/com_facebook_loginview_text_color" />
+
+            <Button
+                android:id="@+id/btnJumpToVisit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="Visitor"
+                android:textColor="@color/com_facebook_loginview_text_color" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

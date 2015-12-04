@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aau.dk.universityapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="aau.dk.login.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="aau.dk.menufragments.MenuActivity"
+            android:label="Menu" >
+        </activity>
+       
+        <activity
+            android:name="aau.dk.login.SignUpActivity"
+            android:label="Sign Up" >
+        </activity>
+        <activity
+            android:name="aau.dk.login.ProfilePictureActivity"
+            android:label="Select your profile picture" >
+        </activity>
+        <activity
+            android:name="aau.dk.menufragments.MapActivity"
+            android:label="Map" >
+        </activity>
+        <activity
+            android:name="aau.dk.menufragments.F2Activity"
+            android:label="Courses information" >
+        </activity>
+        <activity
+            android:name="aau.dk.menufragments.CalendarActivity"
+            android:label="Calendar" >
+        </activity>
+        <activity
+            android:name="aau.dk.fragmentprofile.EditProfileActivity"
+            android:label="My profile" >
+        </activity>
+        <activity
+            android:name="aau.dk.menufragments.SearchProfileActivity"
+            android:label="Search user" >
+        </activity>
+
+         <activity android:name="aau.dk.login.FacebookLoginActivity"
+             android:label="@string/app_name" >
+         </activity>
+        <activity android:name="aau.dk.menufragments.ShowOneProfileActivity"
+            android:label="User Profile" >
+        </activity>
+        <meta-data android:value="@string/app_id" android:name="com.facebook.sdk.ApplicationId"  />
+        <activity android:name="com.facebook.LoginActivity" ></activity>
+        <activity android:label="@string/app_name" android:name="aau.dk.course.ACourseInfoStudent"/>
+    	<activity android:label="@string/app_name" android:name="aau.dk.course.ACourseInfoTeacher"/>
+    	<activity android:label="@string/app_name" android:name="aau.dk.menufragments.ACourses"/>
+    	<activity android:label="@string/app_name" android:name="aau.dk.course.ChatActivity"/>
+    </application>
+</manifest>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:padding="30dp"
+    tools:context=".ProfilePictureActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/com_facebook_profile_picture_blank_square" />
+
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="20dp"
+                android:text="Insert" />
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="Ok" />
+
+            <Button
+                android:id="@+id/btnSkipToMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="Skip this step" />
+
+            <ImageView
+                android:id="@+id/iv_pit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="20dp"
+                android:text="Insert" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

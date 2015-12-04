@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    tools:context=".EditProfileFragmentInfo" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:text="Username" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvUsername"
+                android:layout_alignTop="@+id/tvUsername"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/tvUsername"
+                android:editable="true"
+                android:ems="10"
+                android:hint="Username"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvPassword"
+                android:layout_alignTop="@+id/tvPassword"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/tvPassword"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="75dp"
+                android:ems="10"
+                android:text="E-mail" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvEmail"
+                android:layout_alignTop="@+id/tvEmail"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/tvEmail"
+                android:ems="10"
+                android:hint="E-mail"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvFirstname"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="110dp"
+                android:ems="10"
+                android:text="Firstname" />
+
+            <EditText
+                android:id="@+id/etFirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvFirstname"
+                android:layout_alignTop="@+id/tvFirstname"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/tvFirstname"
+                android:ems="10"
+                android:hint="Firstname"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvLastname"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="145dp"
+                android:ems="10"
+                android:text="Lastname" />
+
+            <EditText
+                android:id="@+id/etLastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvLastname"
+                android:layout_alignTop="@+id/tvLastname"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/tvLastname"
+                android:ems="10"
+                android:hint="Lastname"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvUsertype"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="180dp"
+                android:ems="10"
+                android:text="Usertype" />
+
+            <EditText
+                android:id="@+id/etUsertype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvUsertype"
+                android:layout_alignTop="@+id/tvUsertype"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/tvUsertype"
+                android:editable="false"
+                android:ems="10"
+                android:hint="Usertype"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvUniversity"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="215dp"
+                android:ems="10"
+                android:text="University" />
+
+            <Spinner
+                android:id="@+id/spUniversity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvUniversity"
+                android:layout_alignTop="@+id/tvUniversity"
+                android:layout_toRightOf="@+id/tvUniversity"
+                android:entries="@array/university_array" />
+
+            <TextView
+                android:id="@+id/tvStudy"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="250dp"
+                android:ems="10"
+                android:text="Study" />
+
+            <Spinner
+                android:id="@+id/spStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvStudy"
+                android:layout_alignTop="@+id/tvStudy"
+                android:layout_toRightOf="@+id/tvStudy"
+                android:entries="@array/study_array" />
+
+            <Button
+                android:id="@+id/btnUpdateProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="285dp"
+                
+                android:text="Update" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
